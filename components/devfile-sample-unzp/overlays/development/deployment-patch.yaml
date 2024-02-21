@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-unzp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0024-tenant/tkrw-pr712-0075-0024-app/devfile-sample-unzp@sha256:126c91b7e066e24549c90ba66f0e87f7b0aaed2fa7f3a7a7a50747df9b0e67ef
+        name: my-nodejs
+        resources: {}
+status: {}
